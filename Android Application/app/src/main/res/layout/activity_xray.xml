@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.XrayActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/back"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_back"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_margin="16dp"
+        android:id="@+id/upload_box"
+       android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_camera"
+                android:padding="40dp"
+                android:id="@+id/search"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:text="Upload X-Ray scan"
+                android:padding="16dp"
+                android:textColorHint="#a6a6a6" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/uploading"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/upload_box"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Upload tips"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:lineSpacingExtra="8dp"
+            android:text="Upload a clear photograph of the X-Ray, and avoid using flash and have a clean white background"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Results:"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content" />
+
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:id="@+id/loading"
+    android:visibility="gone"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/head"
+            android:textColor="#212121"
+            android:lineSpacingExtra="8dp"
+            android:text="Your results will be shown here after you upload the X-Ray"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/resultLay"
+            android:visibility="gone"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1. Typhoid"
+            android:id="@+id/D1"
+            android:textColor="#212121"
+
+            android:lineSpacingExtra="8dp"
+            android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/info1"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/D2"
+                    android:textColor="#212121"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/info"
+                    android:id="@+id/info2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/D3"
+                    android:textColor="#212121"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/info"
+                    android:id="@+id/info3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

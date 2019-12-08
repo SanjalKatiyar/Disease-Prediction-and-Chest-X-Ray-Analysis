@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:src="@drawable/plus"
+        android:layout_gravity="center"/>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_below="@+id/image"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="16dp"
+     android:padding="16dp"
+     android:visibility="gone"
+     android:gravity="center"
+     android:text="Disease diagnosis and Chest X-Ray scan using machine learning techniques"
+     android:layout_height="wrap_content" />
+
+</RelativeLayout>

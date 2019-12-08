@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Disease description:"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/description"
+
+        android:padding="8dp"
+        android:lineSpacingExtra="2.5dp"
+        android:background="@drawable/grey_background"
+        android:text="Disease description here"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/info_extra"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Severity: "
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/urgencyLabel"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="LOW"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp" />
+        <ProgressBar
+            android:id="@+id/med_ser"
+            style="@style/CustomProgressBarMedium"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:progress="60"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/low_ser"
+            style="@style/CustomProgressBarLow"
+            android:layout_width="match_parent"
+            android:progress="20"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/high_ser"
+            style="@style/CustomProgressBarHigh"
+            android:layout_width="match_parent"
+            android:progress="85"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Specialists to consult: "
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/specialist"
+
+            android:background="@drawable/grey_background"
+            android:text="NA"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Probable lab tests: "
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tests"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/grey_background"
+            android:lineSpacingExtra="2.5dp"
+            android:text="NA"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>
